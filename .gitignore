@@ -1,0 +1,342 @@
+# =============================================================================
+# .gitignore for ASIC Design Project (RTL/Verification/Synthesis)
+# =============================================================================
+
+# =============================================================================
+# General Files
+# =============================================================================
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+*~
+*.swp
+*.swo
+*.tmp
+*.temp
+
+# Editor files
+.vscode/
+.idea/
+*.sublime-*
+.atom/
+*.code-workspace
+
+# =============================================================================
+# Python (cocotb, verification scripts)
+# =============================================================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+
+# =============================================================================
+# Simulation Results
+# =============================================================================
+# Simulation directories and outputs
+sim/
+simulation/
+sim_build/
+results/
+*.vcd
+*.fst
+*.ghw
+*.lxt
+*.lxt2
+*.vzt
+*.fst.hier
+*.shm/
+*.trn
+*.dsn
+*.history
+*.log
+*.out
+*.err
+
+# Cocotb specific
+results.xml
+__pycache__/
+.pytest_cache/
+
+# ModelSim/QuestaSim
+work/
+transcript
+vsim.wlf
+*.wlf
+*.vstf
+*.ucdb
+modelsim.ini
+
+# Vivado/Xilinx
+*.jou
+*.str
+*.xpr
+*.cache/
+*.hw/
+*.ip_user_files/
+*.runs/
+*.sim/
+*.srcs/
+*.gen/
+*.hbs
+vivado*.backup.*
+.Xil/
+
+# =============================================================================
+# Synthesis Results
+# =============================================================================
+# Yosys synthesis outputs
+syn/
+synthesis/
+*.blif
+*.edif
+*.json
+*.aig
+*.dot
+*.ps
+*.svg
+yosys.log
+yosys_*.log
+
+# Generic synthesis outputs
+*.v.bak
+*.vh.bak
+*.sv.bak
+*_syn.v
+*_netlist.v
+*.sdf
+*.spef
+*.lib
+*.db
+
+# =============================================================================
+# Physical Implementation (OpenLane/LibreLane)
+# =============================================================================
+# OpenLane runs
+runs/
+openlane/runs/
+*.odb
+*.def
+*.lef
+*.gds
+*.gdsii
+*.mag
+*.spice
+*.ext
+*.sim
+*.nodes
+*.res
+*.cap
+
+# Place and Route outputs
+*.placed
+*.routed
+*.cts
+*.filled
+*.drc
+*.lvs
+*.ant
+*.rpt
+
+# Timing analysis
+*.sta
+*.sdc
+*.pt
+*.timing
+*.slack
+
+# Power analysis
+*.pwr
+*.power
+
+# =============================================================================
+# Verification and Testing
+# =============================================================================
+# Test results
+test_results/
+coverage/
+*.xml
+*.junit
+*.tap
+
+# Formal verification
+formal/
+*.sby
+*.smtc
+*.aig
+*.cnf
+
+# =============================================================================
+# Documentation Build
+# =============================================================================
+# Sphinx documentation
+docs/_build/
+docs/build/
+.doctrees/
+*.doctree
+
+# LaTeX
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.idx
+*.ilg
+*.ind
+*.lof
+*.lot
+*.out
+*.toc
+*.synctex.gz
+*.nav
+*.snm
+*.vrb
+
+# =============================================================================
+# Build and Compilation
+# =============================================================================
+# Make outputs
+*.o
+*.a
+*.so
+*.exe
+*.dll
+Makefile.bak
+
+# CMake
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+*.cmake
+
+# Autotools
+Makefile.in
+aclocal.m4
+autom4te.cache/
+config.guess
+config.sub
+configure
+depcomp
+install-sh
+ltmain.sh
+missing
+compile
+config.log
+config.status
+
+# =============================================================================
+# IP and Libraries
+# =============================================================================
+# Generated IP files (keep source, ignore generated)
+ip_gen/
+ip_build/
+*.xci
+*.xcix
+
+# Third-party libraries (if not managed by git submodules)
+lib/
+libs/
+third_party/
+vendor/
+
+# =============================================================================
+# Backup and Temporary Files
+# =============================================================================
+*.bak
+*.backup
+*.orig
+*~
+*.tmp
+*.temp
+.#*
+#*#
+
+# =============================================================================
+# Logs and Reports
+# =============================================================================
+*.log
+*.rpt
+*.report
+*.summary
+*.warn
+*.error
+*.info
+*.debug
+
+# =============================================================================
+# Configuration (keep templates, ignore local configs)
+# =============================================================================
+# Local configuration files
+config/local/
+*.local
+.env.local
+.env.*.local
+
+# User-specific tool configurations
+.synopsys_dc.setup
+.synopsys_pt.setup
+.cadence.cshrc
+.mentor.cshrc
+
+# =============================================================================
+# Archive Files
+# =============================================================================
+*.tar
+*.tar.gz
+*.tar.bz2
+*.tar.xz
+*.zip
+*.rar
+*.7z
+*.gz
+*.bz2
+*.xz
+
+# =============================================================================
+# Project Specific (uncomment as needed)
+# =============================================================================
+# Uncomment these if you have specific directories you want to ignore
+# my_custom_output/
+# proprietary_ip/
+# confidential/
+
+# Keep important empty directories with .gitkeep files
+!.gitkeep
+
+# =============================================================================
+# End of .gitignore
+# =============================================================================
